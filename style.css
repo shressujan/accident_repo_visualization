@@ -1,0 +1,59 @@
+div {
+    display: flex;
+    justify-content: center;
+}
+
+.label-mapping {
+    width: 25% !important;
+}
+
+.axis {
+    font: 10px sans-serif;
+}
+h3 {
+    display: flex;
+    justify-content: center;
+}
+
+u {
+    text-decoration-line: underline;
+}
+
+.label {
+    font-size: 15px;
+}
+
+p {
+    display: flex;
+    border: 2px solid darkgrey;
+    padding: 10px;
+    width: 50%;
+    margin-left: 30%;
+}
+
+path {
+    stroke: steelblue;
+    stroke-width: 2;
+    fill: none;
+}
+
+.axis path,
+.axis line {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+}
+
+.tooltip {
+    position: absolute;
+    display: inline-block;
+    border: 1px dotted black;
+    width: 150px;
+    height: 25px;
+    pointer-events: none;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+}

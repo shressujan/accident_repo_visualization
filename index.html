@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Accident Report Visualization</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="https://d3js.org/d3.v3.min.js"></script>
+</head>
+<body>
+<h3><u>Accident Severity VS Speed limit</u></h3>
+<div id="silhouette_score_speed"></div>
+<div id="cluster_speed_limit"></div>
+<div id="accident_severity_vs_speed"></div>
+<p>As we can see, the model predicted sharp decline in Accident_severity at speed limit 30 mph and speed limit 60 mph, which tells me that those are probably the safest speed limits to drive in!</p>
+<br>
+<h3><u>Accident Severity VS Time</u></h3>
+<div id="silhouette_score_time"></div>
+<div id="cluster_time"></div>
+<div id="accident_severity_vs_time"></div>
+<p>As we can see, the model predicted high accident severity right around the lunch hour (11:00 - 12:00) and rush hour (4:00 - 6:00)</p>
+<br>
+<h3><u>Accident Severity VS Number of Vehicles in accident</u></h3>
+<div id="silhouette_score_num_vehicles"></div>
+<div id="cluster_num_vehicles"></div>
+<div id="accident_severity_vs_num_vehicles"></div>
+<p>As we can see, the model predicted an increasing trend with accident severity vs the number of vehicles involved in the accident</p>
+<br>
+<h3><u>Accident Severity VS Road Surface Condition</u></h3>
+<div id="silhouette_score_road_surface_condition"></div>
+<div id="cluster_road_surface_condition"></div>
+<div id="accident_severity_vs_road_condition"></div>
+<p class="label-mapping">Road Surface Condition <br><br>
+    0: &nbsp;&nbsp; Frost/Ice <br>
+    1: &nbsp;&nbsp; Snow <br>
+    2: &nbsp;&nbsp; Wet/Damp <br>
+    3: &nbsp;&nbsp; Dry</p>
+<p>As we can see, though with some irregularities, the model predicted a decreasing accident_severity curve with better road conditions.</p>
+<br>
+<h3><u>Accident Severity VS Light Condition</u></h3>
+<div id="silhouette_score_light_condition"></div>
+<div id="cluster_light_condition"></div>
+<div id="accident_severity_vs_light_condition"></div>
+<p class="label-mapping">Light Condition <br><br>
+    0: &nbsp;&nbsp; Darkness: Street lights present <br>
+    1: &nbsp;&nbsp; Darkness: Street lights present but unlit <br>
+    2: &nbsp;&nbsp; Darkness: No street lighting <br>
+    3: &nbsp;&nbsp; Darkness: street lighting unknown <br>
+    4: &nbsp;&nbsp; Darkness: Street lights present and lit </p>
+<p>As we can see, the model predicted very low accident severity when Street lights are present and Street light are present and lit!</p>
+<br>
+<br>
+<h3><u>Accident Severity VS Weather Condition</u></h3>
+<div id="silhouette_score_weather_condition"></div>
+<div id="cluster_weather_condition"></div>
+<div id="accident_severity_vs_weather_condition"></div>
+<p class="label-mapping">Weather Condition <br><br>
+    0: &nbsp;&nbsp; Raining with high winds <br>
+    1: &nbsp;&nbsp; Snowing without high winds <br>
+    2: &nbsp;&nbsp; Other <br>
+    3: &nbsp;&nbsp; Fog or mist <br>
+    4: &nbsp;&nbsp; Fine with high winds <br>
+    5: &nbsp;&nbsp; Fine without high winds <br>
+    6: &nbsp;&nbsp; Unknown <br>
+    7: &nbsp;&nbsp; Snowing with high winds <br>
+    8: &nbsp;&nbsp; Raining without high winds <br>
+</p>
+<p>As we can see, the model predicted a sharp decline in accident severity when the weather is good i.e. Fine Without High winds OR Raining without high winds.</p>
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
